@@ -1,5 +1,6 @@
 # system-controller-app
 
+## Available Commands
 	Usage:
 
 	sc_app -c <command> [-t <target> [-v <value>]]
@@ -82,3 +83,11 @@
 		loadPDI - load <target> PDI to Versal
 		setbootPDI - set <target> PDI to be loaded to Versal at boot time
 		resetbootPDI - remove any boot PDI that has been set
+
+## Build Instructions
+Requirements for building System Controller (on board, without cross-compile). Install the following on petalinux:
+```bash
+dnf install make git
+dnf install libgpiod-dev
+dnf install packagegroup-core-buildessential 
+```
